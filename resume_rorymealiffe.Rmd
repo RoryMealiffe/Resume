@@ -1,0 +1,185 @@
+---
+title: "Rory P. Mealiffe"
+author: Rory P. Mealiffe
+date: "`r Sys.Date()`"
+output:
+  pagedown::html_resume:
+    css: ['css/resume_styles.css', 'resume']
+    # set it to true for a self-contained HTML page but it'll take longer to render
+    self_contained: false
+---
+
+```{r, include=FALSE}
+knitr::opts_chunk$set(
+  results='asis', 
+  echo = FALSE
+)
+library(glue)
+library(tidyverse)
+# Set this to true to have links turned into footnotes at the end of the document
+PDF_EXPORT <- FALSE
+# Holds all the links that were inserted for placement at the end
+links <- c()
+source('parsing_functions.R')
+```
+
+
+```{r}
+# When in export mode the little dots are unaligned, so fix that. 
+if(PDF_EXPORT){
+  cat("
+  <style>
+  :root{
+    --decorator-outer-offset-left: -6.5px;
+  }
+  </style>")
+}
+```
+
+
+# Aside
+
+## Contact Info {#contact}
+
+-   <i class="fa fa-envelope"></i> [rory.mealiffe\@gmail.com](mailto:rory.mealiffe@gmail.com){.email}
+-   <i class="fa fa-github"></i> [github.com/rorymealiffe](https://github.com/rorymealiffe)
+-   <i class="fa fa-phone"></i> +1 516-680-8857
+
+## Skills {#skills}
+
+-   Management
+
+-   Experience in R with emphasis on the Tidyverse.
+
+-   Data wrangling
+
+-   Tableau
+
+-   Github
+
+-   SQL
+
+-   Excel
+
+-   SSRS
+
+## Disclaimer {#disclaimer}
+
+<!--This resume was made with the R package [**pagedown**](https://github.com/rstudio/pagedown).-->
+
+Last updated on `r Sys.Date()`.
+
+# Main
+
+## Rory P. Mealiffe {#title}
+
+### A main analytics resource for a large education company. Accomplished leader with excellent business communication skills and 10+ years of experience leading data teams. Passionate about creating compelling data visualizations and bridging the gap between business and tech teams.
+
+## Professional Experience {data-icon="suitcase"}
+
+### Executive Director, Data Science
+
+Kaplan North America
+
+New York, NY
+
+2020-04 - Current
+
+-   Expanded team and responsibilities as part of a merger of three companies (Kaplan Higher Education, Kaplan Professional and Kaplan Test Prep) into Kaplan North America (KNA).
+-   Oversaw expansion of internal survey system (KaplanSurvey) to include more business units as part of process to develop a single company wide NPS metric.
+-   Led the consolidation of all Tableau servers into a single, centralized KNA instance.
+-   Oversaw the creation of the first company wide metric dashboard allowing executives to track sales, lead acquisition and website metrics via Tableau dashboard.
+-   Collaborated with Institutional Support teams to expand suite of available dashboards for customers.
+
+### Director, Data Science
+
+Kaplan Test Prep
+
+New York, NY
+
+2017-01 - 2020-03
+
+-   Facilitated Tableau Server Deployment from proof of concept to enterprise deployment with over 50 dashboards and 300 users.
+-   Product Owner of Data Engineering stream, setting priorities and coordinating deliverables across Data Science and Data Engineering teams.
+-   Oversaw Tableau and SQL developers that created company wide reporting suite which included automating month end reporting, for Revenue, Expense and Sales. Reduced the time spent by the FP&A team on reporting financial by 5 days each month.
+-   Standardized reporting metrics across platforms to resolves issues of erroneous data and improved the overall accuracy of our reporting.
+-   Collaborated with Technology and Product teams to develop new product analytics strategy that would enable the Data Science and Data Engineering teams to have greater input in product development.
+-   Collaborated with Psychometric and Instructional Design teams to develop and write analytic plans regarding student usage and efficacy.
+-   Planned and oversaw team's JIRA sprint to ensure timely delivery of all projects. Used Kanban & scrum practices for agile delivery.
+-   Led Institutional Reporting efforts by overseeing the ingestion and merger of company Learning Management Systems into Redshift. This effort allowed us to embed Tableau dashboards in client facing portals, greatly increasing client satisfaction.
+-   Built process using Python to code open ended survey comments via Semantria. Results displayed in a Tableau dashboard that allows product owners to quickly gain insight into customer feedback.
+
+### Director, Business Intelligence
+
+Kaplan Test Prep
+
+New York, NY
+
+2015-03 - 2016-12
+
+-   Lead effort to drive business intelligence adoption throughout the company, making use of cloud options such as Redshift.
+-   Managed a diverse team of data analysts, web developers, data warehouse engineers and production support analysts.
+-   Advocated the use of Tableau as an enterprise dashboard tool and helped educate business users to facilitate early adoption of the tool.
+-   Oversaw development of an internal customer survey application (KaplanSurvey). Quickly became the main source of NPS data for entire company.
+-   Developed system of automated emails via R to provide teachers with customer feedback.
+
+### Associate Director, Business Intelligence
+
+Kaplan Test Prep
+
+New York, NY
+
+2012-01 - 2015-02
+
+-   Oversaw a team of two analysts. Responsible for the creation and maintenance of over 250 automated reports and over 700 ad hoc requests per year.
+-   Re-engineered the report request process to increase visibility of outstanding requests and shorten turnaround times by automating ticket creation in JIRA using its API.
+-   Responsible for reporting results of company wide Employee Engagement Survey. Built R process that created custom PDF reports for every division.
+
+### Manager, Market Research
+
+Kaplan Test Prep
+
+New York, NY
+
+2008-07 - 2011-12
+
+-   Responsible for collection of competitor intelligence from field, brand managers and outside sources, such as competitor websites, newspapers and online articles.
+-   Interpreted and deciphered collected intelligence. Maintained a competitor blog to disseminate gathered intelligence appropriately.
+-   Automated critical alerts to senior management of situations requiring their attention by designing and building a custom reporting tool using R.
+-   Saved hundreds of man hours per year by automating the manual creation/scheduling of Kaplan classes using R. This tool has already been used to create more than 50K classes to date that would previously have involved manual work from hundreds of employees throughout the country.
+
+### National Manager of Reporting and Analytics
+
+Kaplan Test Prep
+
+New York, NY
+
+2006-02 - 2008-06
+
+-   Developed and maintained numerous reports using PL/SQL, T-SQL, SSRS 2005, Visual Studio 2005 and Excel.
+-   Assisted Senior Management team and other internal customers, such as finance, sales and various business unit heads, in determining reporting requirements based on data available.
+-   Responsible for reports critical to business functions, such as teacher recruitment, student performance evaluation, all centers evaluation and financial performance.
+-   Wrote SQL queries against Oracle and SQL Server databases, in addition to a SQL Server 2008 data warehouse environment.
+-   Managed and quickly handled the report request inbox consisting of requests to pull data for financial reports, leads, enrollments, money management and other business related issues.
+
+### Reporting Coordinator
+
+Kaplan Test Prep
+
+New York, NY
+
+2004-07 - 2006-01
+
+-   Spearheaded projects that made tasks for the National Sales Team automated and efficient.
+-   Responsible for tracking every-day business conducted by the Kaplan Customer Care Center.
+-   Responsible for reporting monthly progress of Kaplan Test Prep and Admissions.
+
+## Education {data-icon="graduation-cap" data-concise="true"}
+
+### Villanova University
+
+B.A. in Biology
+
+Villanova, PA
+
+2000--2004
