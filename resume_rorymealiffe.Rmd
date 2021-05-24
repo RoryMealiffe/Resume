@@ -101,13 +101,13 @@ New York, NY
 
 -   Facilitated Tableau Server Deployment from proof of concept to enterprise deployment with over 50 dashboards and 300 users.
 -   Product Owner of Data Engineering stream, setting priorities and coordinating deliverables across Data Science and Data Engineering teams.
--   Oversaw Tableau and SQL developers that created company wide reporting suite which included automating month end reporting, for Revenue, Expense and Sales. Reduced the time spent by the FP&A team on reporting financial by 5 days each month.
+-   Oversaw efforts that created company wide reporting suite which included automating month end reporting for revenue, expense, sales and call center metrics. Reduced the time spent by the Data Science team on reporting by 5 days each month.
 -   Standardized reporting metrics across platforms to resolves issues of erroneous data and improved the overall accuracy of our reporting.
 -   Collaborated with Technology and Product teams to develop new product analytics strategy that would enable the Data Science and Data Engineering teams to have greater input in product development.
 -   Collaborated with Psychometric and Instructional Design teams to develop and write analytic plans regarding student usage and efficacy.
 -   Planned and oversaw team's JIRA sprint to ensure timely delivery of all projects. Used Kanban & scrum practices for agile delivery.
 -   Led Institutional Reporting efforts by overseeing the ingestion and merger of company Learning Management Systems into Redshift. This effort allowed us to embed Tableau dashboards in client facing portals, greatly increasing client satisfaction.
--   Built process using Python to code open ended survey comments via Semantria. Results displayed in a Tableau dashboard that allows product owners to quickly gain insight into customer feedback.
+-   Partnered with Marketing to stand up a sentiment pipeline for open ended survey comments. Results displayed in a Tableau dashboard that allows product owners to quickly gain insight into customer feedback.
 
 ### Director, Business Intelligence
 
